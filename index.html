@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy: AIML Google Sign-in | Australian Institute for Machine Learning</title>
+  <meta name="description" content="How applications operated by the Australian Institute for Machine Learning at Adelaide University access, use, store and disclose the Google account information they receive through Google Sign-in.">
+  <link rel="canonical" href="https://privacy.aiml.team/">
+  <link rel="icon" href="favicon.ico">
+  <style>
+    @font-face {
+      font-family: "Roboto Serif";
+      font-style: normal;
+      font-weight: 400 700;
+      font-display: swap;
+      src: url("fonts/RobotoSerif-400.woff2") format("woff2");
+    }
+    @font-face {
+      font-family: "Roboto Serif";
+      font-style: italic;
+      font-weight: 400;
+      font-display: swap;
+      src: url("fonts/RobotoSerif-400-italic.woff2") format("woff2");
+    }
+    @font-face {
+      font-family: "Roboto Condensed";
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url("fonts/RobotoCondensed-700.woff2") format("woff2");
+    }
+
+    :root {
+      --navy: #140f50;
+      --blue: #0c2b99;
+      --blue-bright: #1448ff;
+      --ink: #1f2428;
+      --muted: #586167;
+      --rule: #d4dade;
+      --panel: #f3f3f6;
+      --serif: "Roboto Serif", Georgia, "Times New Roman", serif;
+      --condensed: "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      font-family: var(--serif);
+      font-size: 1.0625rem;
+      line-height: 1.65;
+      color: var(--ink);
+      background: #fff;
+    }
+    .wrap { max-width: 780px; margin: 0 auto; padding: 0 1.25rem; }
+    a { color: var(--blue); text-decoration: underline; text-underline-offset: .15em; }
+    a:hover { color: var(--blue-bright); }
+
+    .topbar { background: var(--navy); color: #fff; font-size: .95rem; }
+    .topbar .wrap { display: flex; justify-content: flex-end; align-items: center; min-height: 52px; gap: 2rem; }
+    .topbar a { color: #fff; text-decoration: none; }
+    .topbar a:hover { color: #fff; text-decoration: underline; }
+
+    .site-header { padding: 1.5rem 0 1.25rem; border-bottom: 1px solid var(--rule); }
+    .brand { display: flex; align-items: center; gap: 1rem; text-decoration: none; color: inherit; }
+    .brand img { height: 48px; width: auto; flex: none; }
+    .brand-text { line-height: 1.2; }
+    .brand-name { display: block; font-family: var(--condensed); font-weight: 700; font-size: 1.25rem; color: var(--navy); letter-spacing: .01em; }
+
+    .doc-title { padding: 2.5rem 0 1.75rem; border-bottom: 3px solid var(--navy); }
+    .doc-kicker { font-family: var(--condensed); font-weight: 700; font-size: .95rem; letter-spacing: .12em; text-transform: uppercase; color: var(--blue); margin: 0 0 .5rem; }
+    h1 { font-family: var(--condensed); font-weight: 700; font-size: 2.75rem; line-height: 1.05; color: var(--navy); margin: 0 0 .75rem; }
+    h1::after { content: ""; display: block; width: 1rem; height: 2px; background: var(--blue-bright); margin-top: .75rem; }
+    .doc-subtitle { font-size: 1.2rem; color: var(--ink); margin: 0 0 1rem; }
+    .doc-meta { font-size: .95rem; color: var(--muted); margin: 0; }
+    .doc-meta span + span::before { content: "\00a0\00a0|\00a0\00a0"; color: var(--rule); }
+
+    main { padding: 1rem 0 3.5rem; }
+    h2 { font-family: var(--condensed); font-weight: 700; font-size: 1.5rem; line-height: 1.2; color: var(--navy); margin: 2.5rem 0 .75rem; }
+    h2 .num { display: inline-block; min-width: 2rem; color: var(--blue); }
+    p { margin: 0 0 1rem; }
+    ul { margin: 0 0 1rem; padding-left: 1.5rem; }
+    li { margin: .35rem 0; }
+    address { font-style: normal; }
+
+    table { border-collapse: collapse; width: 100%; margin: 1rem 0 1.25rem; font-size: .98rem; }
+    caption { text-align: left; font-family: var(--condensed); font-weight: 700; color: var(--navy); padding: 0 0 .5rem; }
+    th, td { text-align: left; vertical-align: top; padding: .65rem .75rem; border-bottom: 1px solid var(--rule); }
+    th { background: var(--panel); color: var(--navy); font-family: var(--condensed); font-weight: 700; font-size: 1rem; }
+    .table-wrap { overflow-x: auto; }
+
+    .site-footer { background: var(--navy); color: #d0cfdc; font-size: .92rem; padding: 2rem 0 2.25rem; }
+    .site-footer a { color: #fff; }
+    .site-footer a:hover { color: #e6e1ff; }
+    .footer-row { display: flex; flex-wrap: wrap; gap: .5rem 2rem; justify-content: space-between; align-items: baseline; }
+    .footer-links { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2.1rem; }
+      .brand img { height: 40px; }
+      .topbar .wrap { min-height: 44px; gap: 1.25rem; font-size: .9rem; }
+      .doc-meta span { display: block; }
+      .doc-meta span + span::before { content: none; }
+    }
+    @media print {
+      .topbar, .site-footer { display: none; }
+      a { color: inherit; text-decoration: none; }
+      .doc-title { border-bottom-color: #000; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a href="https://adelaide.edu.au/">Adelaide University</a>
+    <a href="#contact">Contact us</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="https://www.adelaide.edu.au/aiml/">
+      <img src="aiml.svg" alt="">
+      <span class="brand-text">
+        <span class="brand-name">Australian Institute for Machine Learning</span>
+      </span>
+    </a>
+  </div>
+</header>
+
+<div class="doc-title">
+  <div class="wrap">
+    <p class="doc-kicker">Privacy Policy</p>
+    <h1>AIML Google Sign-in</h1>
+    <p class="doc-subtitle">How applications operated by AIML access, use, store and disclose information received from your Google account.</p>
+    <p class="doc-meta"><span>Effective from 14 September 2026</span><span>Last reviewed 14 September 2026</span></p>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <h2 id="scope"><span class="num">1.</span>Purpose and scope</h2>
+  <p>
+    This Privacy Policy is issued by the Australian Institute for Machine Learning (AIML), an institute of
+    Adelaide University, Adelaide, South Australia (“AIML”, “we”, “us”, “our”). It applies to applications
+    operated by AIML that allow you to sign in with your Google account (“our applications”).
+  </p>
+  <p>
+    This policy describes how our applications access, use, store and disclose the information they receive
+    from Google when you sign in. It is the privacy policy for AIML's Google Sign-in and is the policy referenced
+    on the Google consent screen.
+  </p>
+  <p>
+    Adelaide University's
+    <a href="https://adelaide.edu.au/about/policies/privacy-policy/" rel="noopener">Privacy Policy</a> governs
+    the University's handling of personal information generally and applies to any matter not addressed here.
+  </p>
+
+  <h2 id="access"><span class="num">2.</span>Information we receive from Google</h2>
+  <p>
+    Our applications use Google Sign-in to verify your identity. They request only the basic sign-in
+    permissions, which Google identifies as openid, email and profile. Through these permissions, Google
+    provides us with:
+  </p>
+  <ul>
+    <li>your Google account identifier, a unique and stable ID used to recognise your account;</li>
+    <li>your email address, and whether Google has verified it;</li>
+    <li>your name, comprising given name, family name and display name;</li>
+    <li>a link to your Google profile picture.</li>
+  </ul>
+  <p>
+    Our applications do not request access to Google Drive, Gmail, Google Calendar, Contacts, Photos or any
+    other Google service, and do not take any action within your Google account. Authentication is performed by
+    Google. We do not receive or store your Google password.
+  </p>
+
+  <h2 id="use"><span class="num">3.</span>How we use this information</h2>
+  <p>We use the information received from Google to:</p>
+  <ul>
+    <li>sign you in and recognise you on return visits;</li>
+    <li>display your name and profile picture while you are signed in;</li>
+    <li>control access to applications, or parts of them, that are limited to particular groups or events; and</li>
+    <li>maintain the security of the service, prevent misuse and diagnose sign-in problems.</li>
+  </ul>
+  <p>
+    We do not sell Google user data, use it for advertising, or use it to train or fine-tune machine learning
+    models. We will not use it for any purpose not described in this policy without first updating this
+    policy and, where required, obtaining your consent.
+  </p>
+
+  <h2 id="storage"><span class="num">4.</span>Storage, retention and deletion</h2>
+  <p>
+    Information received from Google is stored in AIML's Google Cloud environment in the australia-southeast1
+    (Sydney, Australia) region. It is encrypted in transit and at rest. Access is restricted to authorised
+    AIML staff who require it to operate and secure the service.
+  </p>
+  <div class="table-wrap">
+    <table>
+      <caption>Retention periods</caption>
+      <thead>
+        <tr><th scope="col">Record</th><th scope="col">Retention</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Account details received from Google Sign-in (account identifier, name, email address, profile picture link)</td>
+          <td>Retained while your account is active and deleted 180 days after your last sign-in, or sooner on request.</td>
+        </tr>
+        <tr>
+          <td>Session cookie that keeps you signed in</td>
+          <td>Expires when you sign out or after 7 days, whichever is sooner.</td>
+        </tr>
+        <tr>
+          <td>Server and security logs, which may record your account identifier or email address alongside a sign-in or request</td>
+          <td>180 days, then deleted automatically.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>
+    You may ask us to delete your account and the information we hold about you at any time by writing to
+    <a href="mailto:admins@aiml.team">admins@aiml.team</a>. Deletion requests are actioned within 30 days,
+    except where we are required by law to retain particular records.
+  </p>
+
+  <h2 id="disclosure"><span class="num">5.</span>Disclosure to third parties</h2>
+  <p>We do not disclose Google user data to third parties, except:</p>
+  <ul>
+    <li>to Google, which processes your sign-in as the identity provider in accordance with the
+      <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>, and which provides
+      the cloud infrastructure on which our applications operate under contract to AIML; and</li>
+    <li>where disclosure is required by law, regulation or a valid legal process, or is necessary to protect
+      the rights, property or safety of AIML, our users or others.</li>
+  </ul>
+
+  <h2 id="google"><span class="num">6.</span>Google API Services User Data Policy</h2>
+  <p>
+    AIML's use and transfer to any other app of information received from Google APIs will adhere to the
+    <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API
+    Services User Data Policy</a>, including the Limited Use requirements.
+  </p>
+
+  <h2 id="rights"><span class="num">7.</span>Your rights and choices</h2>
+  <p>
+    Adelaide University handles personal information in accordance with the Australian Privacy Principles in
+    the Privacy Act 1988 (Cth). In relation to our applications you may:
+  </p>
+  <ul>
+    <li><strong>Revoke access.</strong> Withdraw an application's access to your Google account at any time from
+      your <a href="https://myaccount.google.com/permissions" rel="noopener">Google Account permissions page</a>.
+      You will be unable to sign in to that application until you grant access again.</li>
+    <li><strong>Access and correction.</strong> Request a copy of the information we hold about you, or ask us to
+      correct it, by writing to <a href="mailto:admins@aiml.team">admins@aiml.team</a>.</li>
+    <li><strong>Deletion.</strong> Request deletion of your account and associated information as described in
+      section 4.</li>
+    <li><strong>Complaints.</strong> Raise a concern with us first, using the details in section 9, so that we can
+      seek to resolve it. You may also contact the University Privacy Officer at
+      <a href="mailto:privacy@adelaide.edu.au">privacy@adelaide.edu.au</a>, or the
+      <a href="https://www.oaic.gov.au/" rel="noopener">Office of the Australian Information Commissioner</a>.</li>
+  </ul>
+
+  <h2 id="changes"><span class="num">8.</span>Changes to this policy</h2>
+  <p>
+    If the way our applications use Google user data changes, we will publish a revised policy at this address before
+    the change takes effect and update the “Last reviewed” date shown above.
+  </p>
+
+  <h2 id="contact"><span class="num">9.</span>Contact</h2>
+  <address>
+    <p>
+      Australian Institute for Machine Learning<br>
+      Adelaide University<br>
+      AIML Building, Lot Fourteen<br>
+      384–392 North Terrace, Adelaide SA 5000, Australia<br>
+      <a href="mailto:admins@aiml.team">admins@aiml.team</a>
+    </p>
+    <p>
+      University Privacy Officer<br>
+      Office of the Vice Chancellor, Adelaide University SA 5005<br>
+      <a href="mailto:privacy@adelaide.edu.au">privacy@adelaide.edu.au</a>
+    </p>
+  </address>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <div>&copy; 2026 Adelaide University. Australian Institute for Machine Learning.</div>
+    <ul class="footer-links">
+      <li><a href="https://www.adelaide.edu.au/aiml/">AIML</a></li>
+      <li><a href="https://adelaide.edu.au/about/policies/privacy-policy/">University Privacy Policy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>
